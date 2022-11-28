@@ -1,0 +1,58 @@
+.login_container {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    margin-left: 600px;
+    margin-top: 60px;
+    padding-top: 20px;
+    background-color: antiquewhite;
+}
+
+.username_text {
+    margin-left: 30px;
+    margin-top: 200px;
+}
+
+.login_username_field {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.passwd_text {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.login_passwd_field {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.login_btn {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.info {
+    font-family: "Arial Rounded MT Bold";
+    font-size: medium;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.register_btn {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.register_container {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    margin-left: 600px;
+    margin-top: 60px;
+    padding-top: 20px;
+    background-color: antiquewhite;
+}

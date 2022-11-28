@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/index.css" th:href="@{/css/index.css}">
+</head>
+<body>
+    <div th:class="login_container">
+       <form>
+           <label th:class="username_text">Username</label><br>
+           <input th:class="login_username_field" type="text" name="username" placeholder="Enter your username"><br>
+           <label th:class="passwd_text">Password</label><br>
+           <input th:class="login_passwd_field" type="text" name="password" placeholder="Enter your password"><br>
+           <button th:class="login_btn">Login</button><br>
+           <spann th:class="info">Click on Register if you haven't registered yet!</spann><br>
+           <button th:class="register_btn">Register</button>
+       </form>
+    </div>
+</body>
+</html>
