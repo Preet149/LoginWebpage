@@ -1,4 +1,5 @@
-package com.multani.LoginApp.model;/*
+package com.multani.LoginApp.model;
+/*
  *author: Preet
  */
 
@@ -11,17 +12,17 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Registration {
+public class User {
 
     @Id
     @SequenceGenerator(
-            name = "registration_sequence",
-            sequenceName = "registration_sequence",
+            name = "user_sequence",
+            sequenceName = "user_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "registration_sequence"
+            generator = "user_sequence"
     )
     @Column(
             name = "id",
