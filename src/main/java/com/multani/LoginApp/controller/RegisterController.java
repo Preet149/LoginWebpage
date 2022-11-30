@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/register")
 public class RegisterController {
 
-    private UserServiceIF service;
+    private final UserServiceIF service;
 
     @Autowired
     public RegisterController(UserServiceIF service) {

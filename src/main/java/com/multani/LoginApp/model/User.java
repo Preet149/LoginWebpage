@@ -46,10 +46,4 @@ public class User {
             unique = true
     )
     private String password;
-
-    public User(String username, String email, String password) {
-        this.username = username;
-        this.email = email;
-        this.password = password;
-    }
 }
