@@ -1,4 +1,5 @@
 package com.multani.LoginApp.model;
+
 /*
  *author: Preet
  */
