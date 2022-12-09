@@ -8,5 +8,9 @@ public interface UserServiceIF {
 
     public void saveNewUserData(User user);
 
-    public User getUser(String username);
+    public User getUserByUsername(String username);
+
+    public User getUserByPassword(String password);
+
+    public User getUserByEmail(String email);
 }

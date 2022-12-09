@@ -21,7 +21,15 @@ public class UserService implements UserServiceIF{
         repo.save(user);
     }
 
-    public User getUser(String username) {
+    public User getUserByUsername(String username) {
         return repo.findUserByUsername(username);
+    }
+
+    public User getUserByPassword(String password) {
+        return repo.findUserByPassword(password);
+    }
+
+    public User getUserByEmail(String email) {
+        return repo.findUserByEmail(email);
     }
 }
