@@ -26,11 +26,11 @@ public class RegisterController {
     }
 
     @GetMapping("/getuser_with_username")
-    public void getUserByUsername(@RequestBody User user) { service.getUserByUsername(user.getUsername()); }
+    public User getUserByUsername(@RequestBody User user) { return service.getUserByUsername(user.getUsername()); }
 
     @GetMapping("/getuser_with_password")
-    public void getUserByPassword(@RequestBody User user) { service.getUserByPassword(user.getPassword()); }
+    public User getUserByPassword(@RequestBody User user) { return service.getUserByPassword(user.getPassword()); }
 
     @GetMapping("/getuser_with_email")
-    public void getUserByEmail(@RequestBody User user) { service.getUserByEmail(user.getEmail()); }
+    public User getUserByEmail(@RequestBody User user) { return service.getUserByEmail(user.getEmail()); }
 }
