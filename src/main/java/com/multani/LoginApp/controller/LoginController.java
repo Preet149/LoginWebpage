@@ -21,8 +21,8 @@ public class LoginController {
          this.service = service;
      }
 
-     @GetMapping("/getuser")
+    /* @GetMapping("/getuser")
      public User getUserData(@RequestBody User user) {
          return service.getUser(user.getUsername());
-     }
+     }*/
 }
