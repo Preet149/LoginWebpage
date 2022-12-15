@@ -25,12 +25,18 @@ public class RegisterController {
         service.saveNewUserData(user);
     }
 
-    @GetMapping("/getuser_with_username")
-    public User getUserByUsername(@RequestBody User user) { return service.getUserByUsername(user.getUsername()); }
+    @GetMapping("/exist_username")
+    public boolean containUsernameInDB(@RequestParam(name="username") String username) {
+         return service.getUserByUsername(username) != null ? true : false;
+    }
 
-    @GetMapping("/getuser_with_password")
-    public User getUserByPassword(@RequestBody User user) { return service.getUserByPassword(user.getPassword()); }
+    @GetMapping("/exist_password")
+    public boolean containPasswordInDB(@RequestParam(name="password") String password) {
+        return service.getUserByPassword(password) != null ? true : false;
+    }
 
-    @GetMapping("/getuser_with_email")
-    public User getUserByEmail(@RequestBody User user) { return service.getUserByEmail(user.getEmail()); }
+    @GetMapping("/exist_email")
+    public boolean containEmailInDB(@RequestParam(name="email") String email) {
+        return service.getUserByEmail(email) != null ? true : false;
+    }
 }
