@@ -5,10 +5,7 @@ package com.multani.LoginApp.controller;/*
 import com.multani.LoginApp.model.User;
 import com.multani.LoginApp.service.UserServiceIF;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/login")
@@ -21,8 +18,8 @@ public class LoginController {
          this.service = service;
      }
 
-    /* @GetMapping("/getuser")
-     public User getUserData(@RequestBody User user) {
-         return service.getUser(user.getUsername());
-     }*/
+     @GetMapping("/user")
+     public User getUserData(@RequestParam(name="username") String username) {
+         return service.getUserByUsername(username);
+     }
 }
