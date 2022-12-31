@@ -19,7 +19,9 @@ public class LoginController {
      }
 
      @GetMapping("/user")
-     public User getUserData(@RequestParam(name="username") String username) {
-         return service.getUserByUsername(username);
+     public String getUserPassword(@RequestParam(name="username") String username) {
+         User user = service.getUserByUsername(username);
+
+         return user != null ? user.getPassword() : "";
      }
 }
